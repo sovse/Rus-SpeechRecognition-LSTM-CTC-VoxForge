@@ -1,5 +1,7 @@
 # Rus_speech_recognition_LSTM_CTC_VoxForge
+
 #MFCC
+
 Это маленькая модель для  автоматического распознавание речи русского языка, обученная на корпусе данных VoxForge(  2,9 ГБ).
 Она использует два слоя  B-LSTM( рекурентная сеть с «длинной кратковременной памятью») по 128 нейронов и функцию потерь CTC (Нейросетевая темпоральная классификация).
 
@@ -40,3 +42,5 @@ Start by first running the "download_voxforge_data.ipynd" this downloads the dat
 Now, run the "train_lstm_ctc_voxforge_rus" to get the input features for speech recognition, Mel Frequency Cepstral Coefficients (MFCCs) are extracted. They are assembled into a batched format with the target character level annotations for subsequent training
 
  uses 2 layer bidirectional LSTM network to predict the transcriptions from the audio features. Every 1 epochs, an example batch is decoded and printed for comparision with the target.
+
+Contact parkov33@gmail.com
